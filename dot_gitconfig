@@ -1,0 +1,26 @@
+[user]
+	name = nblandos
+	email = nblandos@gmail.com
+[core]
+	excludesfile = /home/nblandos/.gitignore_global
+	autocrlf = input
+	whitespace = cr-at-eol
+[alias]
+	uncommit = reset --soft "HEAD^"
+	unstage = reset
+	ac = !git add -A && git commit
+	st = status
+	ci = commit
+	co = checkout
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[push]
+	autoSetupRemote = true
+	default = upstream
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
