@@ -13,6 +13,6 @@ set -g theme_newline_prompt '> '
 bind \cf complete
 bind \t forward-char
 eval (direnv hook fish)
+fish_add_path ~/.local/bin
 fastfetch
-set PATH $PATH /home/nblandos/.local/bin
 
