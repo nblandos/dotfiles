@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
-      *) return;;
+        *) return;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -115,8 +115,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-# auto launch fish shell
-fish
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+ export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+. "$HOME/.cargo/env"
+
+# start fish shell
+exec /usr/bin/fish
+
+. "$HOME/.local/share/../bin/env"

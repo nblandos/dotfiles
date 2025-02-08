@@ -5,6 +5,7 @@
 	excludesfile = /home/nblandos/.gitignore_global
 	autocrlf = input
 	whitespace = cr-at-eol
+	pager = delta
 [alias]
 	uncommit = reset --soft "HEAD^"
 	unstage = reset
@@ -24,3 +25,11 @@
 	defaultBranch = main
 [color]
 	ui = auto
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true  # use n and N to move between diff sections
+	dark = true
+	syntax-theme = base16-256
+[merge]
+	conflictstyle = zdiff3
