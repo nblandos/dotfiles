@@ -2,9 +2,7 @@
 *.log
 
 # Fish shell
-.config/fish/functions/
-.config/fish/conf.d/
-.config/fish/completions/
-.config/fish/fish_variables
-.config/fish/fish_history
-.config/fish/fishd.*
+fish/.config/fish/functions/
+fish/.config/fish/conf.d/
+fish/.config/fish/completions/
+fish/.config/fish/fish_variables
