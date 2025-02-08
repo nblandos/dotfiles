@@ -23,21 +23,21 @@ end
 fish_add_path /usr/local/bin
 
 # Aliases
-alias lzg 'lazygit'
-alias lzd 'lazydocker'
-alias vim 'nvim'
-alias vi 'nvim'
-alias cat 'bat'
-alias python 'python3'
-alias ls='eza --icons --git'
-alias lsa='eza --icons --git --all'
-alias l='eza -alg --color=always --group-directories-first --git'
-alias ll='eza -aliSgh --color=always --group-directories-first --icons --header --long --git'
-alias lt='eza -@alT --color=always --git'
+alias vim="nvim"
+alias vi="nvim"
+alias cat="bat"
+alias python="python3"
+alias ls="eza --icons --git"
+alias lsa="eza --icons --git --all"
+alias l="eza -alg --color=always --group-directories-first --git"
+alias ll="eza -aliSgh --color=always --group-directories-first --icons --header --long --git"
+alias lt="eza -@alT --color=always --git"
 alias llt="eza --oneline --tree --icons --git-ignore"
-alias lr='eza -alg --sort=modified --color=always --group-directories-first --git'
+alias lr="eza -alg --sort=modified --color=always --group-directories-first --git"
 
 # Abbreviations
+abbr lzg 'lazygit'
+abbr lzd 'lazydocker'
 abbr dc 'docker-compose'
 abbr dcb 'docker-compose build'
 abbr dcd 'docker-compose down'
