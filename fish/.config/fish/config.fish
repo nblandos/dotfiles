@@ -7,14 +7,14 @@ set -gx VISUAL nvim
 
 # Determine OS type
 switch (uname)
-    case "Darwin"
-        set -gx OSTYPE 'macOS'
+    case Darwin
+        set -gx OSTYPE macOS
     case '*'
-        set -gx OSTYPE 'Linux'
+        set -gx OSTYPE Linux
 end
 
 # Add paths based on OS
-if test "$OSTYPE" = 'macOS'
+if test "$OSTYPE" = macOS
     fish_add_path /opt/homebrew/bin
 else
     fish_add_path ~/.local/bin
@@ -36,19 +36,20 @@ alias llt="eza --oneline --tree --icons --git-ignore"
 alias lr="eza -alg --sort=modified --color=always --group-directories-first --git"
 
 # Abbreviations
-abbr lzg 'lazygit'
-abbr lzd 'lazydocker'
-abbr dc 'docker-compose'
-abbr dcb 'docker-compose build'
-abbr dcd 'docker-compose down'
-abbr dcl 'docker-compose logs'
-abbr dclf 'docker-compose logs -f'
-abbr dcp 'docker-compose pull'
-abbr dcr 'docker-compose run --rm'
-abbr dcu 'docker-compose up'
-abbr dcub 'docker-compose up --build'
-abbr dcud 'docker-compose up -d'
-abbr dcudb 'docker-compose up -d --build'
+abbr c clear
+abbr lzg lazygit
+abbr lzd lazydocker
+abbr dc docker-compose
+abbr dcb "docker-compose build"
+abbr dcd "docker-compose down"
+abbr dcl "docker-compose logs"
+abbr dclf "docker-compose logs -f"
+abbr dcp "docker-compose pull"
+abbr dcr "docker-compose run --rm"
+abbr dcu "docker-compose up"
+abbr dcub "docker-compose up --build"
+abbr dcud "docker-compose up -d"
+abbr dcudb "docker-compose up -d --build"
 
 # Configure fish theme and prompt
 set -g default_user na
@@ -62,10 +63,13 @@ set -g theme_newline_cursor yes
 set -g theme_newline_prompt '> '
 
 # Key bindings
-bind \t forward-char 
-bind \cf complete 
+bind \t forward-char
+bind \cf complete
 
 # Interactive shell specific configurations
-if status is-interactive; and test "$TERM_PROGRAM" != "vscode"
+if status is-interactive; and test "$TERM_PROGRAM" != vscode
     fastfetch
 end
+
+# Initialise zoxide
+zoxide init fish | source
