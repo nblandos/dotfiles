@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+
+# Fish shell
+.config/fish/functions/
+.config/fish/conf.d/
+.config/fish/completions/
+.config/fish/fish_variables
+.config/fish/fish_history
+.config/fish/fishd.*
