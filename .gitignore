@@ -6,3 +6,9 @@ fish/.config/fish/functions/
 fish/.config/fish/conf.d/
 fish/.config/fish/completions/
 fish/.config/fish/fish_variables
+
+# tmux
+tmux/.config/tmux/plugins/
+
+# gh
+gh/.config/gh/hosts.yml
