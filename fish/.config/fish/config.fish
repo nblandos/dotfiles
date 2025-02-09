@@ -40,16 +40,16 @@ abbr c clear
 abbr lzg lazygit
 abbr lzd lazydocker
 abbr dc docker-compose
-abbr dcb "docker-compose build"
-abbr dcd "docker-compose down"
-abbr dcl "docker-compose logs"
-abbr dclf "docker-compose logs -f"
-abbr dcp "docker-compose pull"
-abbr dcr "docker-compose run --rm"
-abbr dcu "docker-compose up"
-abbr dcub "docker-compose up --build"
-abbr dcud "docker-compose up -d"
-abbr dcudb "docker-compose up -d --build"
+abbr dcb "docker compose build"
+abbr dcd "docker compose down"
+abbr dcl "docker compose logs"
+abbr dclf "docker compose logs -f"
+abbr dcp "docker compose pull"
+abbr dcr "docker compose run --rm"
+abbr dcu "docker compose up"
+abbr dcub "docker compose up --build"
+abbr dcud "docker compose up -d"
+abbr dcudb "docker compose up -d --build"
 
 # Configure fish theme and prompt
 set -g default_user na
