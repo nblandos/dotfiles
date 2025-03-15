@@ -1,5 +1,4 @@
 jorgebucaran/fisher
-jorgebucaran/nvm.fish
 jorgebucaran/autopair.fish
 meaningful-ooo/sponge
 nickeb96/puffer-fish
@@ -8,3 +7,5 @@ dracula/fish
 ilancosman/tide@v6
 joseluisq/gitnow@2.12.0
 patrickf1/fzf.fish
+catppuccin/fish
+jorgebucaran/nvm.fish

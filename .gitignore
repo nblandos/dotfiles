@@ -12,6 +12,3 @@ tmux/.config/tmux/plugins/
 
 # gh
 gh/.config/gh/hosts.yml
-
-# btop
-btop/.config/btop/themes/
