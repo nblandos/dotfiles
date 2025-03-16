@@ -21,6 +21,7 @@ else
 end
 
 fish_add_path /usr/local/bin
+fish_add_path ~/.local/share/bob/nvim-bin
 
 # Aliases
 alias vim="nvim"
