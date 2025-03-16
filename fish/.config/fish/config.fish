@@ -35,9 +35,10 @@ alias ll="eza -aliSgh --color=always --group-directories-first --icons --header 
 alias lt="eza -@alT --color=always --git"
 alias llt="eza --oneline --tree --icons --git-ignore"
 alias lr="eza -alg --sort=modified --color=always --group-directories-first --git"
+alias c="clear"
+alias u="topgrade"
 
 # Abbreviations
-abbr c clear
 abbr lzg lazygit
 abbr lzd lazydocker
 abbr dc docker-compose
