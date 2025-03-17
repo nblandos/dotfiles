@@ -37,6 +37,7 @@ alias llt="eza --oneline --tree --icons --git-ignore"
 alias lr="eza -alg --sort=modified --color=always --group-directories-first --git"
 alias c="clear"
 alias u="topgrade"
+alias f="fish"
 
 # Abbreviations
 abbr lzg lazygit
