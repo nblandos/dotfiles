@@ -32,4 +32,4 @@
 	dark = true
 	syntax-theme = base16-256
 [merge]
-	conflictstyle = zdiff3
+	conflictstyle = diff3
