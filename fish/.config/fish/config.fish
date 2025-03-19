@@ -67,8 +67,8 @@ set -g theme_newline_cursor yes
 set -g theme_newline_prompt '> '
 
 # Key bindings
-bind \t forward-char
-bind \cf complete
+bind -M insert \t forward-char
+bind -M insert \cf complete
 
 # Interactive shell specific configurations
 if status is-interactive; and test "$TERM_PROGRAM" != vscode
@@ -87,3 +87,6 @@ end
 
 # Initialise zoxide
 zoxide init fish | source
+
+# Initialise startship
+starship init fish | source
