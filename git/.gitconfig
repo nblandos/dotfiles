@@ -5,6 +5,7 @@
 	excludesfile = /home/nblandos/.gitignore_global
 	autocrlf = input
 	whitespace = cr-at-eol
+  preloadindex = true
 	pager = delta
 [alias]
 	uncommit = reset --soft "HEAD^"
@@ -13,14 +14,19 @@
 	st = status
 	ci = commit
 	co = checkout
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
+[status]
+  branch = true
+  showStash = true
+  showUntracked = all
 [push]
 	autoSetupRemote = true
-	default = upstream
+	default = current
+[pull]
+  default = current
 [init]
 	defaultBranch = main
 [color]

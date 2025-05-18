@@ -30,6 +30,10 @@ alias vim="nvim"
 alias vi="nvim"
 alias cat="bat"
 alias python="python3"
+alias c="clear"
+alias u="topgrade"
+alias f="fish"
+
 alias ls="eza --icons --git"
 alias lsa="eza --icons --git --all"
 alias l="eza -alg --color=always --group-directories-first --git"
@@ -37,9 +41,18 @@ alias ll="eza -aliSgh --color=always --group-directories-first --icons --header 
 alias lt="eza -@alT --color=always --git"
 alias llt="eza --oneline --tree --icons --git-ignore"
 alias lr="eza -alg --sort=modified --color=always --group-directories-first --git"
-alias c="clear"
-alias u="topgrade"
-alias f="fish"
+
+alias gg="clear -x; git status; git log --oneline -4"
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gu="git pull"
+alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit --all"
+alias gb="git branch"
+alias gi="git init"
+alias gcl="git clone"
 
 # Abbreviations
 abbr lzg lazygit
